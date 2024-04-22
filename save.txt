@@ -1,0 +1,185 @@
+type:Start
+text:начало
+xCord:640
+yCord:0
+Height:32
+Width:122
+ID:0
+Connections: 1 
+--------
+type:InputOutput
+text:Ввод a, b, c
+xCord:620
+yCord:60
+Height:42
+Width:164
+ID:1
+Connections: 2 
+--------
+type:Condition
+text:  a == 0?
+xCord:640
+yCord:130
+Height:42
+Width:129
+ID:2
+yesID:3
+noID:9
+--------
+type:Condition
+text:  b == 0?
+xCord:790
+yCord:190
+Height:42
+Width:129
+ID:3
+yesID:4
+noID:7
+--------
+type:Condition
+text:   c == 0?
+xCord:910
+yCord:280
+Height:42
+Width:129
+ID:4
+yesID:5
+noID:6
+--------
+type:InputOutput
+text:x - любое число
+xCord:1010
+yCord:480
+Height:42
+Width:164
+ID:5
+Connections: 19 
+--------
+type:InputOutput
+text: решений нет
+xCord:790
+yCord:360
+Height:42
+Width:164
+ID:6
+Connections: 19 
+--------
+type:Block
+text:x = -c/b
+xCord:670
+yCord:280
+Height:42
+Width:122
+ID:7
+Connections: 8 
+--------
+type:InputOutput
+text:Вывод x
+xCord:610
+yCord:480
+Height:42
+Width:164
+ID:8
+Connections: 19 
+--------
+type:Block
+text:D = b^2 - (4ac)
+xCord:380
+yCord:180
+Height:42
+Width:122
+ID:9
+Connections: 10 
+--------
+type:Condition
+text:  D > 0?
+xCord:380
+yCord:280
+Height:42
+Width:129
+ID:10
+yesID:11
+noID:15
+--------
+type:Block
+text:D = sqrt(D)
+xCord:450
+yCord:370
+Height:42
+Width:122
+ID:11
+Connections: 12 
+--------
+type:Block
+text: x1 = (-b-D)/(2*a)
+xCord:450
+yCord:440
+Height:42
+Width:122
+ID:12
+Connections: 13 
+--------
+type:Block
+text:x1 = (-b-D)/(2a)
+xCord:450
+yCord:510
+Height:42
+Width:122
+ID:13
+Connections: 14 
+--------
+type:InputOutput
+text:Вывод x1 и x2
+xCord:420
+yCord:580
+Height:42
+Width:164
+ID:14
+Connections: 19 
+--------
+type:Condition
+text:   D = 0?
+xCord:160
+yCord:350
+Height:42
+Width:129
+ID:15
+yesID:17
+noID:16
+--------
+type:InputOutput
+text:Нет решений в натуральных числах
+xCord:40
+yCord:570
+Height:58
+Width:164
+ID:16
+Connections: 19 
+--------
+type:Block
+text:x = (-b)/(2a)
+xCord:280
+yCord:440
+Height:42
+Width:122
+ID:17
+Connections: 18 
+--------
+type:InputOutput
+text:Вывод x
+xCord:250
+yCord:580
+Height:42
+Width:164
+ID:18
+Connections: 19 
+--------
+type:End
+text:конец
+xCord:820
+yCord:710
+Height:32
+Width:122
+ID:19
+Connections: 
+--------
